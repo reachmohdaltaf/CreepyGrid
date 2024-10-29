@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Creepy Grid</title>
+</head>
+<body>
+    
+    <header class="web-header">
+         <h1>Creepy Grid</h1>
+    </header>
+         
+   <main>
+    
+    <div class="minesweeper">
+        <header class="minesweeper-header">
+            <select class="selector" name="" id="selector">
+                <option value="level" selected disabled>Select</option>
+                <option value="normal">Normal</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <div class="flag-counter">
+            <div>&#128681;<span>20</span></div>
+            </div>
+            <div class="timer">
+                <div>&#9201; <span>10</span></div>
+            </div>
+            <div class="sound">
+                <div><i class="fa fa-volume-up"></i></div>
+            </div>
+        </header>
+        
+        <div class="minesweeper-board">
+            <!----row and column come here-->
+            <!-- <div class="box revealed one">1</div>
+            <div class="box revealed flag"></div>
+            <div class="box revealed"></div>
+            <div class="box revealed"></div>
+            <div class="box revealed bomb"></div>
+            <div class="box revealed two flag">2</div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box revealed "></div>
+            <div class="box revealed two">2</div>
+            <div class="box revealed three">3</div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box revealed two">2</div>
+            <div class="box revealed one">1</div>
+            <div class="box revealed two">2</div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box revealed"></div>
+            <div class="box revealed"></div>
+            <div class="box revealed"></div>
+            <div class="box revealed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+         
+           
+    
+      -->
+
+        </div>
+
+    </div>
+
+   </main>
+
+   <section class="howtoplay">
+    
+    <div class="how-heading">
+        <h2>How To Play The Game ?</h2>
+    </div>
+
+    <div class="how-content">
+        <ul>
+            <li><strong>Objective:</strong> Clear a minefield without detonating any mines. The goal is to uncover all the safe squares.</li>
+            <li><strong>Game Board:</strong> The board consists of a grid of squares, some of which contain mines. The size of the board and the number of mines can vary depending on the difficulty level (easy, medium, hard).</li>
+            <li><strong>Starting the Game:</strong> Click on any square to start the game. The first click will always reveal a safe square.</li>
+            <li><strong>Uncovering Squares:</strong> Clicking on a square will either uncover a number (indicating the count of adjacent mines) or a mine (which ends the game). If a square with no adjacent mines is clicked, it will automatically reveal all adjacent squares.</li>
+            <li><strong>Numbers:</strong> Each uncovered number (1-8) indicates how many mines are in the surrounding squares (including diagonals). Use these numbers to deduce where mines might be located.</li>
+            <li><strong>Flagging Mines:</strong> Right-click (or use a specific key combination) to place a flag on a suspected mine location. Flagging helps keep track of potential mines and prevents accidental clicks.</li>
+            <li><strong>Winning the Game:</strong> The game is won when all non-mine squares are uncovered or all mines are flagged correctly.</li>
+            <li><strong>Losing the Game:</strong> The game is lost if you click on a mine, which will end the game and reveal all mine locations.</li>
+            <li><strong>Game Settings:</strong> Adjust settings for difficulty, including grid size and number of mines.</li>
+            <li><strong>Strategy:</strong> Use logic and deduction to uncover squares and flag potential mines. Start by clicking on corners or edges where there are fewer adjacent squares.</li>
+        </ul>
+    </div>
+
+   </section>
+
+   <footer>
+    <div class="copyright">@Copyright</div>
+   </footer>
+    
+    
+    <script src="./script.js"></script>
+</body>
+</html>
