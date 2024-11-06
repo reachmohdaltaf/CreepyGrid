@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&family=Special+Elite&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&family=Special+Elite&display=swap');
 
 
 *{
@@ -61,8 +61,6 @@ main{
     width: 41px;
     margin: 2px;
     height: 40px;
-    box-shadow: 0px 0px 1px;
-    border:#403929;
     background-color: #dacba4;
     display: flex;
     justify-content: center;
@@ -70,6 +68,9 @@ main{
     font-size: 23px;
     align-content: center;
     position: relative;
+    cursor: pointer;
+    border: 3px outset #dacba4;
+
 }
 
 
@@ -119,17 +120,26 @@ main{
 
 
 
-
-
 .box.revealed{
     background-color: #eae1c6;
-    box-shadow: 0px 0px 0.4px;
+    box-shadow: 0px 0px 0.5px;
+    color: black;
+    cursor: default;
+    scale: 1;
+    border: none;
+
+
+
+}
+.minesweeper-board .box:not(.revealed):hover {
+    scale: 0.940;
+
 }
 
-.minesweeper-board .box:hover{
-    scale: 0.950;
+.box.revealed {
+    scale: 1;
+    
 }
-
 
 
 .howtoplay{
