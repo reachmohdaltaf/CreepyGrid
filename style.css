@@ -1,11 +1,9 @@
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&family=Special+Elite&display=swap');
 
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Special Elite", system-ui;
+    box-sizing: border-box;   
 }
 
 
@@ -36,8 +34,8 @@ main{
 
 .minesweeper{
     background-color: #dacba4;
-    width: 450px;
-    box-shadow: 1px 5px 10px;
+    width: 400px;
+    tile-shadow: 1px 5px 10px;
 
 }
 
@@ -45,7 +43,8 @@ main{
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    align-items: center;   
+    align-items: center; 
+
     
 }
 
@@ -54,13 +53,16 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     background-color: #eae1c6;
+    width: 400px;
+
+
     
 }
 
-.minesweeper-board .box{
-    width: 41px;
-    margin: 2px;
+.minesweeper-board .tile{
+    width: 45px;
     height: 40px;
+    margin: 2px;
     background-color: #dacba4;
     display: flex;
     justify-content: center;
@@ -70,34 +72,37 @@ main{
     position: relative;
     cursor: pointer;
     border: 3px outset #dacba4;
+    color: black;
 
 }
 
 
 
-/* boxes numbers color  */
 
-.box.one{
+
+/* tilees numbers color  */
+
+.tile.x1{
     color: blue;
 }
 
-.box.two{
+.tile.x2{
     color: darkgreen;
 }
 
-.box.three{
+.tile.x3{
     color: red;
 }
 
 
-.box.flag::after{
+.tile.flag::after{
     content: "🚩";
     position: absolute;
     height: 40px;
     top: 0;
 }
 
-.box.bomb::after{
+.tile.addbomb::after{
     content: "💣";
     position: absolute;
     height: 40px;
@@ -106,21 +111,7 @@ main{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.box.revealed{
+.tile.revealed{
     background-color: #eae1c6;
     box-shadow: 0px 0px 0.5px;
     color: black;
@@ -131,12 +122,12 @@ main{
 
 
 }
-.minesweeper-board .box:not(.revealed):hover {
+.minesweeper-board .tile:not(.revealed):hover {
     scale: 0.940;
 
 }
 
-.box.revealed {
+.tile.revealed {
     scale: 1;
     
 }
@@ -154,7 +145,7 @@ main{
     background-color:#B7B09B;
     width: 700px;
     padding: 20px;
-    box-shadow: 0px 10px 10px;
+    tile-shadow: 0px 10px 10px;
     margin-top: 50px;
 
 }
